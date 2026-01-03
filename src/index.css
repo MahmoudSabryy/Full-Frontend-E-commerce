@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow-x: hidden;
+}
+.input-dark {
+  width: 100%;
+  background-color: #0b0f1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input-dark::placeholder {
+  color: #6b7280;
+}
+
+.input-dark:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.4);
+}
+
+/* ===== ERROR TEXT ===== */
+.error-text {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #f87171;
+}
+
+/* ===== PAYMENT OPTIONS ===== */
+.paymentoption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background-color: #0b0f1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.paymentoption + .paymentoption {
+  margin-top: 12px;
+}
+
+.paymentoption:hover {
+  border-color: #6366f1;
+  background-color: rgba(99, 102, 241, 0.08);
+}
+
+.paymentoption input[type="radio"] {
+  accent-color: #6366f1;
+  transform: scale(1.1);
+}
+
+/* ===== ORDER SUMMARY CARD ===== */
+.order-summary {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.order-summary h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.order-summary p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ===== BUTTON STATES ===== */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ===== SMALL ANIMATIONS ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bg-\[\#111827\] {
+  animation: fadeUp 0.4s ease forwards;
+}
+
+/* ===== TOAST FIX (React Hot Toast) ===== */
+.react-hot-toast {
+  font-size: 14px;
+}
+
+/* globals.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
