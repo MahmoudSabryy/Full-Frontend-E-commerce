@@ -16,9 +16,9 @@ export default function Productdetailscomponent() {
     globalCartDataContext
   );
 
-  const [comment, setComment] = useState(""); // التعليق
-  const [rating, setRating] = useState(0); // نجوم من 1 لـ 5
-  const [loadingReview, setLoadingReview] = useState(false); // أثناء الإرسال
+  const [comment, setComment] = useState("");
+  const [rating, setRating] = useState(0);
+  const [loadingReview, setLoadingReview] = useState(false);
 
   const { _id } = useParams();
 

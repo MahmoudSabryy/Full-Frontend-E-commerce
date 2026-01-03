@@ -318,7 +318,6 @@ export default function Categorycomponent() {
               <option value={false}>Inactive</option>
             </select>
 
-            {/* حقل رفع صورة */}
             <input
               type="file"
               {...register("file")}
@@ -365,7 +364,6 @@ export default function Categorycomponent() {
               placeholder={selectedCategory.name}
             />
 
-            {/* حقل رفع صورة */}
             <input
               type="file"
               {...register("file")}

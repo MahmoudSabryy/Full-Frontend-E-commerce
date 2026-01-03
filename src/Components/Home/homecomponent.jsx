@@ -47,7 +47,7 @@ export default function Homecomponent() {
             navigation
             pagination={{ clickable: true }}
             autoplay={{
-              delay: 3000, // 3 ثواني لكل صورة
+              delay: 3000,
               disableOnInteraction: false,
             }}
             loop={true}
@@ -115,7 +115,7 @@ export default function Homecomponent() {
           loop={true}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           spaceBetween={20}
-          slidesPerView={6} // عدد العناصر اللي تظهر
+          slidesPerView={6}
           className="py-10"
         >
           {categoriesData.map((cat) => (

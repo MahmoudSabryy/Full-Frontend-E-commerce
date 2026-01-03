@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 import Masterlayoutcomponent from "../Master Layout/Masterlayoutcomponent";
@@ -55,7 +55,7 @@ export default function App() {
     }
   }, []);
 
-  const routes = createHashRouter([
+  const routes = createBrowserRouter([
     {
       path: "/",
       element: <Masterlayoutcomponent userData={userData} logOut={logOut} />,

@@ -32,7 +32,6 @@ export default function PaymentResult() {
     );
   }
 
-  // لو الطلب فشل
   if (orderData.status === "cancelled" || orderData.isPaid === false) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#0B0F1A] text-white px-6">

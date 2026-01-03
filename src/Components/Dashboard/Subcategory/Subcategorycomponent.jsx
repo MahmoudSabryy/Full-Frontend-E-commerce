@@ -365,7 +365,6 @@ export default function Subcategorycomponent() {
                 <option value={false}>Inactive</option>
               </select>
 
-              {/* حقل رفع صورة */}
               <input
                 type="file"
                 {...register("file")}

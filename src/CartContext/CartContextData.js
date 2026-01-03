@@ -107,7 +107,7 @@ export default function GlobalCartDataProvider(props) {
       );
 
       setCart(data.data.products);
-      localStorage.removeItem("cart"); // مهم
+      localStorage.removeItem("cart");
     } catch (error) {
       console.log("MERGE ERROR:", error.response?.data || error);
     }
