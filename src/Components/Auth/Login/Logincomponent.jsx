@@ -24,7 +24,8 @@ export default function Logincomponent({ saveUserData }) {
         return navigate("/home");
       }
     } catch (error) {
-      toast.error(error.response.data);
+      toast.error(error.response.data.error);
+      navigate("/login");
     }
   };
 

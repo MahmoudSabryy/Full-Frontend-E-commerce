@@ -32,7 +32,10 @@ export default function PaymentResult() {
     );
   }
 
-  if (orderData.status === "cancelled" || orderData.isPaid === false) {
+  if (
+    orderData.status === "cancelled" ||
+    (orderData.isPaid === false && orderData.paymentMethod === "card")
+  ) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#0B0F1A] text-white px-6">
         <h1 className="text-3xl font-bold mb-4 text-red-500">
