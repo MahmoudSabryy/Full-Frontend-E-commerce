@@ -177,6 +177,7 @@ export default function GlobalCartDataProvider(props) {
   useEffect(() => {
     if (!isLoggedIn) {
       setCart(getUserCartLocal());
+      getUserCartLocal();
       return;
     }
 
