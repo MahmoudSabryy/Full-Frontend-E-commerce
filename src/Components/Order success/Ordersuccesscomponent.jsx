@@ -34,6 +34,7 @@ export default function PaymentResult() {
 
   if (
     orderData.status === "cancelled" ||
+    orderData.isCancelled === true ||
     (orderData.isPaid === false && orderData.paymentMethod === "card")
   ) {
     return (
