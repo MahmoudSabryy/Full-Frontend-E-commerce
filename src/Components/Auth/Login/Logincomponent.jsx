@@ -24,7 +24,11 @@ export default function Logincomponent({ saveUserData }) {
         return navigate("/home");
       }
     } catch (error) {
-      toast.error(error.response.data.error);
+      toast.error(
+        error.response.data.error ||
+          error.response.data ||
+          "Too many requests please try again in 5 minutes"
+      );
       navigate("/login");
     }
   };

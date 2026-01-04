@@ -20,7 +20,11 @@ export default function RegisterComponent({ saveUserData }) {
 
       toast.success("Signup successfully ✔");
     } catch (error) {
-      setErrorMsg(error.response.data.error);
+      setErrorMsg(
+        error.response.data.error ||
+          error.response.data ||
+          "Too many requests please try again in 5 minutes"
+      );
     }
   };
 
