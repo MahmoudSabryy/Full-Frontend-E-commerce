@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 export let globalDataContext = createContext(null);
 
-export const baseURL = "https://full-backend-e-commerce-app.vercel.app/";
+export const baseURL = "https://full-backend-e-commerce-app.vercel.app";
 
 export const getAuthHeaders = () => ({
   "Content-Type": "application/json",
